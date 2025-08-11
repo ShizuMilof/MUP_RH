@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg">
+
+</head>
+<body>
+    <header>
+        <h3>ODJAVA VOZILA</h3>
+        <button onclick="goBack()" class="back-button">NATRAG</button>
+
+    </header>
+    <main>
+        <ul class="category-list">
+
+
+      <li class="category-item">
+    <a onclick="toggleContent('clanak-238-1-7')">FIZIČKA OSOBA</a>
+    <div id="clanak-238-1-7" class="hidden-content">
+       
+
+        <p><strong>Članak 250.2/13 – VLASNIK VOZILA</strong></p>
+        <p>Isti kao vlasnik nije avedeno vozilo odjavio 15 dana od dana isteka prometne dozvole s datumom: xy</p>
+        <p><strong>Kazna:</strong> 90,00 eura</p>
+
+        <hr> <hr> <hr>
+
+        <p><strong>Članak 250.3/13 – NOVI VLASNIK VOZILA</strong></p>
+        <p>Isti kao vlasnik navedenog vozila nije u roku 15 dana od dana stjecanja vozila (datum: [unesi datum]) registrirao vozilo na svoje ime ili ga odjavio.</p>
+        <p><strong>Kazna:</strong> 90,00 eura</p>
+    </div>
+</li>
+
+                    
+            
+
+            <li class="category-item">
+    <a onclick="toggleContent('clanak-250-2-11')">PRAVNA OSOBA</a>
+    <div id="clanak-250-2-11" class="hidden-content">
+        <p><strong>Članak 250.2/11</strong></p>
+
+        <p>Pravna osoba čije je vozilo XY zatečeno u prometu iako nije produženo važenje prometne dozvole u roku 15 dana od dana isteka važenja prometne dozvole: XY</p>
+
+        <p><strong>Kazna:</strong> 660,00 - 1.990,00 eura</p>
+    </div>
+</li>
+
+            
+
+           <li class="category-item">
+    <a onclick="toggleContent('clanak-250-2-12')">ODGOVORNA OSOBA U PRAVNOJ OSOBI</a>
+    <div id="clanak-250-2-12" class="hidden-content">
+        <p><strong>Članak 250.2/12</strong></p>
+
+        <p>Odgovorna osoba u pravnoj osobi XY čije je vozilo XY zatečeno u prometu iako nije produženo važenje prometne dozvole u roku 15 dana od dana isteka važenja prometne dozvole: XY</p>
+
+        <p><strong>Kazna:</strong> 190,00 - 660,00 eura</p>
+
+    </div>
+</li>
+
+            
+
+
+        </ul>
+
+      
+    </main>
+</body>
+</html>

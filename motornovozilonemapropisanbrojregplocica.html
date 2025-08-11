@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg">
+
+
+</head>
+<body>
+    <header>
+        <h3>MOTORNO VOZILO NEMA PROPISAN BROJ REG. PLOČICA</h3>
+        <button onclick="goBack()" class="back-button">NATRAG</button>
+
+    </header>
+    <main>
+        <ul class="category-list">
+            <li class="category-item">
+                <a  onclick="toggleContent('clanak-244-1-7')">VOZAČ</a>
+                <div id="clanak-244-1-7" class="hidden-content">
+                    <p><strong>Vozila s dvije reg. oznake:</strong></p>
+                    <p><strong>Članak 244.1/7</strong></p>
+                    
+                    <p><strong>Vozila s jednom reg. oznakom:</strong></p>
+                    <p><strong>Članak 244.2/7</strong></p>
+
+                    <p>Isti je upravljao navedenim vozilom koji nema propisan broj pločica</p>
+                    <p><strong>Kazna:</strong>30,00 eura </p>
+
+                </div>
+            </li>
+            
+                    
+            <li class="category-item">
+                <a  onclick="toggleContent('clanak-289-1-2')">PRAVNA OSOBA/FIZIČKA OSOBA OBRTNIK</a>
+                <div id="clanak-289-1-2" class="hidden-content">
+                    <p><strong>Vozila s dvije reg. oznake:</strong></p>
+                    <p><strong>Članak 244.1/5</strong></p>
+                    
+                    <p><strong>Vozila s jednom reg. oznakom:</strong></p>
+                    <p><strong>Članak 244.2/5</strong></p>
+
+                     <p>Pravna osoba(Fizička osoba - obrtnik) čiji je vozač XY upravljao navedenim vozilom bez propisanog broja reg pločica</p>
+                    <p><strong>Kazna:</strong> 660,00 - 1.990,00 eura</p>
+
+                </div>
+            </li>
+            
+            <li class="category-item">
+                <a  onclick="toggleContent('clanak-289-1-3')">ODGOVORNA OSOBA U PRAVNOJ OSOBI-TO NISAM PRONASAO U APLIKACIJI, NECE OTVORITI</a>
+                <div id="clanak-289-1-3" class="hidden-content">
+                   
+                </div>
+            </li>
+            
+            
+
+
+        </ul>
+
+      
+    </main>
+</body>
+</html>

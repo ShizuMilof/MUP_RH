@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg">
+
+</head>
+<body>
+    <header>
+        <h3>VOZAČKA DOZVOLA I MOBITEL</h3>
+        <button onclick="goBack()" class="back-button">NATRAG</button>
+
+    </header>
+    <main>
+        <ul class="category-list">
+            <li class="category-item">
+                <a  onclick="toggleContent('istek-vazenja')">ISTEK VAŽENJA VOZAČKE DOZVOLE</a>
+                <div id="istek-vazenja" class="hidden-content">
+                    <p><strong>ČLANAK 196.1/5</strong></p>
+                    <p>Isti upravljao navedenim vozilom iako mu je isteklo važenje vozačke dozvole s datumom: xy.</p>
+                    <p><strong>Kazna:</strong> 130,00 eura</p>
+                </div>
+            </li>
+            <li class="category-item">
+                <a onclick="toggleContent('ne-koristi-pomagala')">NE KORISTI POMAGALA UPISANA U VD</a>
+                <div id="ne-koristi-pomagala" class="hidden-content">
+                    <p><strong>ČLANAK 196.2/6</strong></p>
+                    <p>Isti je upravljao navedenim vozilom, a pritom nije koristio pomagala upisana u vozačkoj dozvoli.</p>
+                    <p><strong>Kazna:</strong> 60,00 eura</p>
+                    <p><strong>01.01</strong>- naočale</p>
+                    <p><strong>01.02</strong>- kontaktne leće</p>
+                    <p><strong>01.06</strong>- naočale ili leće</p>
+                </div>
+            </li>
+            <li class="category-item">
+                <a onclick="toggleContent('koristenje-mobitela')">KORIŠTENJE MOBITELA</a>
+                <div id="koristenje-mobitela" class="hidden-content">
+                    <p><strong>ČLANAK 196.3/7</strong></p>
+                    <p>Isti je za vrijeme upravljanja vozilom koristio mobitel na način koji umanjuje mogućnost reagiranja i sigurnog upravljanja vozilom.</p>
+                    <p><strong>Kazna:</strong> 130,00 eura</p>
+                </div>
+            </li>
+      
+        
+            <li class="category-item">
+                <a  onclick="toggleContent('upravljanje-prije-stjecanja')">UPRAVLJANJE PRIJE STJECANJA PRAVA NA UPRAVLJANJE</a>
+                    <div id="upravljanje-prije-stjecanja" class="hidden-content">
+
+                    <p><strong>ČLANAK 216.1/3</strong></p>
+                    <p>Isti je upravljao navedenim vozilom prije stjecanja prava na upravljanje vozilom bilo koje kategorije</p>
+                    <p><strong>Kazna:</strong> 1320,00 - 2.650,00 eura ili 60 dana zatvora </p>
+                    <p>NAPOMENA: Optužni prijedlog uz izdavanje obavijesti + (oduzimanje vozila ukoliko je najmanje 2 puta pravomoćno kažnjen)</p>
+                    <p><strong>Zaštitna mjera:</strong> </p>   
+                    <p><strong>1. put - 3mj</strong> </p>
+                    <p><strong>2. put - 6mj</strong> </p>
+                    <p><strong>3. put - 12mj</strong> </p>
+                </div>
+            </li>
+
+            <li class="category-item">
+                <a  onclick="toggleContent('upravljanje-vozilo-kategorije-koja-nije-upisana-u-vd')">UPRAVLJANJE VOZILOM KATEGORIJE KOJA NIJE UPISANA U VD</a>
+                <div id="upravljanje-vozilo-kategorije-koja-nije-upisana-u-vd" class="hidden-content">
+                    <p><strong>ČLANAK 223.2/3</strong></p>
+                    <p>Isti je upravljao navedenim vozilom "X" kategorije iako mu ista nije upisana u vozačkoj dozvoli.</p>
+
+                    <p><strong>OPN</strong></p>
+
+                    <p>Kazna: 390,00 eura </p>
+
+                    <p><strong>Kategorije mtc i mopeda:</strong></p>
+
+                    <p>AM kategorija- moped(L1) i laki četverocikl </p>   
+                    <p>A1 kategorija- do 125cm3 i 11kW </p>   
+                    <p>A2 kategorija- do 35kW </p>   
+                    <p>A kategorija </p>   
+                </div>
+            </li>  
+
+                <li class="category-item">
+                    <a  onclick="toggleContent('nema-vd-kod-sebe')">NEMA VD KOD SEBE</a>
+                    <div id="nema-vd-kod-sebe" class="hidden-content">
+                        <p><strong>ČLANAK 229.1/5</strong></p>
+                        <p>Isti kod sebe prilikom upravljanja navedenim vozilom nije imao vozačku dozvolu.</p>
+                        <p><strong>Kazna:</strong> 30,00 eura </p>
+                    </div>
+                </li>           
+
+
+                <li class="category-item">
+                    <a  onclick="toggleContent('clanak-229-2-6')">VLASNIK VOZILA ILI OSOBA KOJOJ JE VOZILO POVJERENO DAJE NA UPRAVLJANJE OSOBI</a>
+                    <div id="clanak-229-2-6" class="hidden-content">
+                        <p><strong>Članak 229.2/6</strong></p>
+                        <p>
+                            1. prije stjecaja<br>
+                            2. pod utjecajem alkohola, droga ili lijekova<br>
+                            3. SM ili ZM zabrane upravljanja<br>
+                            4. mjera opreza zabrane upravljanja<br>
+                            5. nema odgovarajuću kategoriju<br>
+                            6. upravljanje bez pomagala upisana u VD<br>
+                            7. VD oduzeta ili ukinuta
+                        </p>
+                        <p><strong>Opis - prije stjecanja:</strong></p>
+                        <p>Vlasnik navedenog vozila je dao na upravljanje vozilom osobi "X" koja nije stekla pravo upravljanja vozilom bilo koje kategorije.</p>
+                        <p><strong>Opis - alkohol:</strong></p>
+                        <p>Vlasnik navedenog vozila je dao na upravljanje vozilom osobi "X" koja je pod utjecajem alkohola od "X" g/kg.</p>
+                        <p><strong>Opis - kategorija:</strong></p>
+                        <p>Vlasnik navedenog vozila je dao na upravljanje vozilom osobi "X" koja u vozačkoj dozvoli nema upisanu odgovarajuću kategoriju.</p>
+                        </br><p><strong>PN</strong></p>
+                        <p><strong>Kazna:</strong> 390,00 - 920,00 eura</p>
+                    </div>
+                </li>
+                
+                <li class="category-item">
+                    <a  onclick="toggleContent('clanak-229-3-7')">VLASNIK VOZILA NEDA PODATKE O VOZAČU</a>
+                    <div id="clanak-229-3-7" class="hidden-content">
+                        <p><strong>Članak 229.3/7</strong></p>
+                        <p><strong>Opis - odgovorna osoba u pravnoj osobi:</strong></p>
+                        <p>Odgovorna osoba u pravnoj osobi "X" koja kao vlasnik navedenog vozila nije dao vjerodostojan podatak o identitetu osobe kojoj je dao vozilo na upravljanje.</p>
+                        <p><strong>Opis - fizička osoba:</strong></p>
+                        <p>Vlasnik navedenog vozila nije dao vjerodostojan podatak o identitetu osobe kojoj je dao vozilo na upravljanje.</p>
+                        </br><p><strong>PN</strong></p>
+                        <p><strong>Kazna:</strong> 660,00 - 1.990,00 eura</p>
+                    </div>
+                </li>
+                
+                <li class="category-item"><a href="./upravljanjepodzabranom.html">UPRAVLJANJE POD ZABRANOM</a></li>
+                <li class="category-item"><a href="./upravljanjevozilomiakojevdponistena.html">UPRAVLJANJE POD ZABRANOM IAKO JE VD PONIŠTENA(NEGATIVNI BODOVI)</a></li>
+
+        </ul>
+
+        <div id="prekršaji-menu" class="menu">
+            <a href="vozacka-dozvola.html" class="menu-button">Vozačka dozvola i mobitel</a>
+        </div>
+    </main>
+</body>
+</html>
