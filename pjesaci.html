@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg" />
+  </head>
+  <body>
+    <header>
+      <h3>PREKRŠAJI PJEŠAKA</h3>
+      <button onclick="goBack()" class="back-button">NATRAG</button>
+    </header>
+    <main>
+      <ul class="category-list">
+        <li class="category-itemblack"><a href=""></a></li>
+        <li class="category-item"><a>Prekršaji pješaka</a></li>
+        <li class="category-itemblack"><a href=""></a></li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('kretanje-pjesaka-po-kolniku')">KRETANJE ILI ZADRŽAVANJE PJEŠAKA NA KOLNIKU</a>
+          <div id="kretanje-pjesaka-po-kolniku" class="hidden-content">
+            <p><strong>Članak 124.1/4</strong></p>
+            <p>Isti se u svojstvu pješaka kretao po kolniku navedene ceste</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('pjesak-ne-koristi-pjesaci-prijelaz')">PJEŠAK NE KORISTI OBILJEŽENI PJEŠAČKI PRIJELAZ</a>
+          <div id="pjesak-ne-koristi-pjesaci-prijelaz" class="hidden-content">
+            <p><strong>Članak 129.2/3</strong></p>
+            <p>Isti prilikom prelaska kolnika navedene ceste nije koristio obilježeni pješački prijelaz</p>
+            <p><strong>Kazna:</strong> 30 eura</p>
+            <p>Napomena:</p>
+            <p>U naselju - 50 m</p>
+            <p>Izvan naselja - 100 m</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('pjesak-preko-crvenog-svjetla')">PJEŠAK PREKO CRVENOG SVJETLA</a>
+          <div id="pjesak-preko-crvenog-svjetla" class="hidden-content">
+            <p><strong>Članak 130.1/4</strong></p>
+            <p>Isti je u svojstvu pješaka prešao obilježeni pješački prijelaz za vrijeme dok je na semaforu bilo uključeno crveno svjetlo za njegov smjer kretanja</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('pjesak-pjesacki-suprutno-sluz-osobe')">PJEŠAK PRELAZI PREKO OBILJEŽENOG PJEŠAŠKOG PRIJELAZA SUPROTNO ZNAKOVIMA SLUŽBENE OSOBE</a>
+          <div id="pjesak-pjesacki-suprutno-sluz-osobe" class="hidden-content">
+            <p><strong>Članak 130.2/4</strong></p>
+            <p>Isti je prešao obilježeni pješački prijelaz iako mu znakovima ovlaštene osobe to nije bilo dopušteno</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('pjesak-na-brzoj-ili-autocesti')">PJEŠAK NA BRZOJ ILI AUTOCESTI</a>
+          <div id="pjesak-na-brzoj-ili-autocesti" class="hidden-content">
+            <p><strong>Članak 139.1/3</strong></p>
+            <p>Isti se u svojstvu pješaka kretao navedenom autocestom (brzom cestom ili cestom namjenjenom isključivo za promet motornih vozila)</p>
+            <p><strong>Kazna:</strong> 60,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-itemblack"><a href=""></a></li>
+        <li class="category-item"><a>Prekršaji vozača prema pješacima</a></li>
+        <li class="category-itemblack"><a href=""></a></li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('nepropustanje-pjesaka-pri-skretanju')">NEPROPUŠTANJE PJEŠAKA PRI SKRETANJU</a>
+          <div id="nepropustanje-pjesaka-pri-skretanju" class="hidden-content">
+            <p><strong>Članak 133.2/4</strong></p>
+            <p>Isti je upravljao navedenim vozilom, a prilikom skretanja na bočnu cestu nije propustio pješaka koji je već stupio na obilježeni pješački prijelaz</p>
+            <p><strong>Kazna:</strong> 60,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('nepropustanje-pjesaka-na-pjesackom')">NEPROPUŠTANJE PJEŠAKA NA OBILJEŽENOM PJEŠAČKOM PRIJELAZU</a>
+          <div id="nepropustanje-pjesaka-na-pjesackom" class="hidden-content">
+            <p><strong>Članak 134.1/4</strong></p>
+            <p>Isti je upravljao navedenim vozilom, te nije propustio pješaka koji je već stupio na obilježeni pješački prijelaz</p>
+            <p><strong>Kazna:</strong> 60,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('prolazak-pokraj-vozila-pjesackog')">PROLAZAK POKRAJ VOZILA KOJE USPORAVA ILI JE ZAUSTAVLJENO ISPRED PJEŠAČKOG PRIJELAZA</a>
+          <div id="prolazak-pokraj-vozila-pjesackog" class="hidden-content">
+            <p><strong>Članak 134.3/5</strong></p>
+            <p>Isti je upravljao navedenim vozilom te je prošao pored vozila koje je bilo zaustavljeno ispred obilježenog pješačkog prijelaza zbog propuštanja pješaka</p>
+            <p><strong>Kazna:</strong> 390,00 eura</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
