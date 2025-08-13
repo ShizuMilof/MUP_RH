@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg" />
+  </head>
+  <body>
+    <header>
+      <h3>OSOBNA PRIJEVOZNA SREDSTVA</h3>
+      <button onclick="goBack()" class="back-button">NATRAG</button>
+    </header>
+    <main>
+      <ul class="category-list">
+        <li class="category-item">
+          <a onclick="toggleContent('uporaba-svjetala')">UPORABA SVJETALA</a>
+          <div id="uporaba-svjetala" class="hidden-content">
+            <p><strong>Članak 101.2/5</strong></p>
+            <p><strong>Kazna:</strong> 60,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('nepropisno-parkiranje')">NEPROPISNO PARKIRANJE</a>
+          <div id="nepropisno-parkiranje" class="hidden-content">
+            <p><strong>Članak 112.7/14</strong></p>
+            <p>Isti kao vozač bicikla / osobnog prijevoznog sredstva prešao preko obilježenog pješačkog prijelaza, a da nije zaustavio vozilo i gurao ga kao pješak.</p>
+            <p><strong>Kazna:</strong> 130 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('uporaba-reflektirajucih-elemenata')">UPORABA REFLEKTIRAJUĆIH ELEMENATA</a>
+          <div id="uporaba-reflektirajucih-elemenata" class="hidden-content">
+            <p><strong>NEMA!</strong></p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('kaciga')">KACIGA</a>
+          <div id="kaciga" class="hidden-content">
+            <p><strong>Članak 114.2/4</strong></p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('vise-osoba-od-propisanog-broja')">VIŠE OSOBA OD PROPISANOG BROJA</a>
+          <div id="vise-osoba-od-propisanog-broja" class="hidden-content">
+            <p><strong>Članak 158.1/4</strong></p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('uporaba-slusalica')">UPORABA SLUŠALICA U OBA UHA</a>
+          <div id="uporaba-slusalica" class="hidden-content">
+            <p><strong>Članak 196.4/8</strong></p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+            <p>NAPOMENA: odnosi se na vozače bicikla i osobnog prijevoznog sredstva</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('alkohol')">ALKOHOL IZNAD 0.5 G/KG</a>
+          <div id="alkohol" class="hidden-content">
+            <p><strong>NEMA!</strong></p>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
