@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg" />
+  </head>
+  <body>
+    <header>
+      <h3>NEPOŠTIVANJE ZNAKA OVLAŠTENE OSOBE</h3>
+      <button onclick="goBack()" class="back-button">NATRAG</button>
+    </header>
+    <main>
+      <ul class="category-list">
+        <li class="category-item">
+          <a onclick="toggleContent('nepostivanje-znaka-vozac')">NEPOŠTIVANJE ZNAKA OVLAŠTENE OSOBE ZA VOZAČA</a>
+          <div id="nepostivanje-znaka-vozac" class="hidden-content">
+            <p><strong>Članak 32.1/4</strong></p>
+            <p>Opis - kada se vozač ne zaustavi:</p>
+            <p>Isti kao vozač nije zaustavio  navedeno vozilo kojim je upravljao na naredbe policijskih službenika izražene pomoću zvučnih i svjetlosnih signala</p>
+            <p>Opis - kada vozač ne postupi po naredbi policijskog službenika:</p>
+            <p>PREKRŠAJNI NALOG</p>
+            <p><strong>Kazna:</strong> 390,00 - 920,00 eura</p>
+            <p>1. put - 3 mjeseci</p>
+            <p>2. put - 6 mjeseci</p>
+            <p>3. put - 12 mjeseci</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('nepostivanje-znaka-sudionik')">NEPOŠTIVANJE ZNAKA OVLAŠTENE OSOBE ZA OSTALE SUDIONIKE U PROMETU</a>
+          <div id="nepostivanje-znaka-sudionik" class="hidden-content">
+            <p><strong>Članak 32.1/7</strong></p>
+            <p>Isti u svojstvu putnika/pješaka nije postupio po naredbi policijskog službenika.</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
