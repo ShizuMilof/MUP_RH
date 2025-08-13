@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg" />
+  </head>
+  <body>
+    <header>
+      <h3>MOTOCIKLI I BICIKL</h3>
+      <button onclick="goBack()" class="back-button">NATRAG</button>
+    </header>
+    <main>
+      <ul class="category-list">
+        <li class="category-item">
+          <a onclick="toggleContent('VOŽNJA-MOTORNIM-VOZILOM-PO-NOGOSTUPU')">VOŽNJA MOTORNIM VOZILOM PO NOGOSTUPU, PJEŠAČKOM ZONOM ILI ŽUTOM TRAKOM</a>
+          <div id="VOŽNJA-MOTORNIM-VOZILOM-PO-NOGOSTUPU" class="hidden-content">
+            <p><strong>Članak 46.1/3</strong></p>
+            <p>Isti je upravljao navedenim vozilom izvan kolnika na nogostupu (u pješačkoj zoni)</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('PROKLIZAVANJE-KOTAČA')">PROKLIZAVANJE KOTAČA I VOŽNJA NA JEDNOM KOTAČU</a>
+          <div id="PROKLIZAVANJE-KOTAČA" class="hidden-content">
+            <p><strong>Članak 52.3/4</strong></p>
+            <p>Opis - proklizavanje:</p>
+            <p>Isti je upravljao navedenim vozilom postižući gornju granicu dopuštenog broja okretaja motora prilikim čega je došlo do proklizavanja kotača</p>
+            <p>Opis - vožnja na jednom kotaču:</p>
+            <p>Isti je upravljao navedenim vozilom na jednom kotaču (prednjem ili stražnjem)</p>
+            <p><strong>Kazna:</strong> 130 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('VOZAC-KACIGA')">VOZAČ ILI OSOBA KOJA SE PREVOZI NE NOSI ZAŠTITNU KACIGU</a>
+          <div id="VOZAC-KACIGA" class="hidden-content">
+            <p><strong>Članak 114.1/3</strong></p>
+            <p>Za vozača:</p>
+            <p>Isti za vrijeme upravljanja navedenim vozilom nije na glavi nosio propisanu, homologiranu i uredno pričvršćenu zaštitnu kacigu</p>
+            <p>Za osobu koja se prevozi:</p>
+            <p>Isti u svojstvu putnika na navedenom vozilu nije na glavi nosio propisanu, homologiranu i uredno pričvršćenu zaštitnu kacigu</p>
+            <p><strong>Kazna:</strong> 130 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('VOZAC-16-KACIGA')">VOZAČ BICIKLA MLAĐI OD 16 GODINA NA GLAVI NE NOSI ZAŠTITNU KACIGU</a>
+          <div id="VOZAC-16-KACIGA" class="hidden-content">
+            <p><strong>Članak 114.1/4</strong></p>
+            <p>Isti za vrijeme upravljanja biciklom iako mlađi od 16 godina nije na glavi nosio zaštitnu kacigu</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('BICIKL-KOLNIK')">VOŽNJA BICIKLA IZVAN KOLNIKA</a>
+          <div id="BICIKL-KOLNIK" class="hidden-content">
+            <p><strong>Članak 112.1/15</strong></p>
+            <p>Isti upravljao navedenim vozilom izvan kolnika</p>
+            <p><strong>Kazna:</strong> 60,00 eura</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
