@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg">
+
+
+</head>
+<body>
+    <header>
+        <h3>PROMETNE NESREĆE</h3>
+        <button onclick="goBack()" class="back-button">NATRAG</button>
+
+    </header>
+    <main>
+        <ul class="category-list">
+            
+
+            
+            <li class="category-item"><a href="https://narodne-novine.nn.hr/clanci/sluzbeni/2011_12_141_2831.html" target="_blank" rel="noopener noreferrer">PRAVILNIK O NAČINU POSTUPANJA POLICIJSKIH SLUŽBENIKA U OBAVLJANJU POSLOVA NADZORA I UPRAVLJANJA PROMETOM NA CESTAMA</a></li>
+            
+            <li class="category-item">
+                <a onclick="toggleContent('materijalna')">PN - MATERIJALNA ŠTETA</a>
+                <div id="materijalna" class="hidden-content">
+                    <p><strong>Članak 293.1</strong></p>
+                    <p><strong>Kazna:</strong>130,00 eura </p>
+                </div>
+            </li>   
+            
+            <li class="category-item">
+                <a onclick="toggleContent('ozlijedene')">OZLIJEĐENE OSOBE</a>
+                <div id="ozlijedene" class="hidden-content">
+                    <p><strong>Članak 293.2</strong></p>
+                    <p><strong>Kazna:</strong>260,00 eura </p>
+                </div>
+            </li>   
+            <li class="category-itemblack"><a href=""></a></li>
+
+            <li class="category-item-t"><a>UZROCI PROMETNIH NESREĆA</a></li>
+            
+             <li class="category-item">
+                <a onclick="toggleContent('prednostprol')">NEPOŠTIVANJE PREDNOSTI PROLASKA</a>
+                <div id="prednostprol" class="hidden-content">
+                    <p>Pravilo desne strane  <strong> -> Članak 57.1/7</strong> </p>
+                    <p>Pravilo lijevog skretanja <strong> -> Članak 57.2/7</strong></p>
+                    <p>Pravilo vozila na tračnicama <strong> -> Članak 57.3/7</strong></p>
+                    <p>Pravilo glavne/sporedne ceste <strong> -> Članak 57.4/7</strong></p>
+                    <p>Pravilo suvremenog kolničkog zastora <strong> -> Članak 57.5/7</strong></p>
+                    <p>Pravilo biciklističe trake ili staze <strong> -> Članak 57.6/7</strong></p>
+                    <p><strong>Kazna:</strong>390,00 - 920,00 eura </p>
+                    <br>
+                    <p><strong>Zaštitna mjera:</strong></p>
+                    <ul>
+                        <li>1. put - 1 mjesec</li>
+                        <li>2. put - 3 mjeseca</li>
+                        <li>3. put - 6 mjeseci</li>
+                    </ul>
+                </div>
+            </li>  
+            <li class="category-item">
+                <a onclick="toggleContent('samopokr')">SAMOPOKRETANJE VOZILA</a>
+                <div id="samopokr" class="hidden-content">
+                    <p><strong>Članak 88.1/2</strong></p>
+                    <p><strong>Kazna:</strong>30,00 eura </p>
+                </div>
+            </li>  
+
+            <li class="category-item">
+                <a onclick="toggleContent('mimoilazenje')">MIMOILAŽENJE</a>
+                <div id="mimoilazenje" class="hidden-content">
+                    <p><strong>Članak 63.1/5</strong></p>
+                    <p><strong>Kazna:</strong>30,00 eura </p>
+                </div>
+            </li>  
+
+            <li class="category-item">
+                <a onclick="toggleContent('razmak')">NEDOVOLJAN RAZMAK IZMEĐU VOZILA</a>
+                <div id="razmak" class="hidden-content">
+                    <p><strong>Članak 109.1/2</strong></p>
+                    <p><strong>Kazna:</strong>60,00 eura </p>
+                </div>
+            </li>  
+
+            <li class="category-item">
+                <a onclick="toggleContent('mimoilazenje')">NEPRILAGOĐENA BRZINA</a>
+                <div id="mimoilazenje" class="hidden-content">
+                    <p><strong>Članak 51.1/5</strong></p>
+                    <p><strong>Kazna:</strong>130,00 eura </p>
+                </div>
+            </li>  
+            <li class="category-item">
+                <a onclick="toggleContent('radnje')">RADNJE VOZILOM U PROMETU</a>
+                <div id="radnje" class="hidden-content">
+                    <p><strong>Članak 43.1/3 i 43.2/3</strong></p>
+                    <p><strong>Kazna:</strong>130,00 eura </p>
+                    <p><strong>Radnje:</strong></p>
+                    <ul>
+                        <p>1. Uključivanje u promet</p>
+                        <p>2. Prestrojavanje(mijenjanje prometne trake)</p>
+                        <p>3. Pretjecanje </p>
+                        <p>4. Obilaženje </p>
+                        <p>5. Skretanja (ulijevo ili udesno)</p>
+                        <p>6. Polukružno okretanje </p>
+                        <p>7. Vožnja unatrag </p>
+                        <p>8. Zaustavljanje </p>
+                    </ul>
+                </div>
+            </li>  
+
+             <li class="category-item">
+                <a onclick="toggleContent('nekretanje')">NEKRETANJE VOZILOM SREDINOM PROMETNE TRAKE</a>
+                <div id="nekretanje" class="hidden-content">
+                    <p><strong>Članak 46.1/3</strong></p>
+                    <p><strong>Kazna:</strong>30,00 eura </p>
+                </div>
+            </li>  
+
+             <li class="category-item">
+                <a onclick="toggleContent('nekretanje')">RASIPANJE TERETA S VOZILA</a>
+                <div id="nekretanje" class="hidden-content">
+                    <p><strong>Članak 154.2/10</strong></p>
+                    <p><strong>Kazna:</strong>130,00 - 260,00 eura </p>
+                </div>
+            </li> 
+            <li class="category-itemblack"><a href=""></a></li>
+
+            <li class="category-item-t"><a>UZROCI PROMETNIH NESREĆA</a></li>
+            <li class="category-item">
+                <a onclick="toggleContent('napustanje')">NAPUŠTANJE PN S MATERIJALNOM ŠTETOM</a>
+                <div id="napustanje" class="hidden-content">
+                    <p><strong>Članak 176.2 (prisutni svi sudionici)/5</strong></p>
+                    <p><strong>Članak 176.3 (oštećenik nije prisutan)/5</strong></p>
+
+                    <p><strong>Kazna:</strong>390,00 - 920,00 eura </p>
+                    <p><strong>Zaštitna mjera:</strong>6 mjeseci</p>
+
+                </div>
+            </li> 
+            <li class="category-item">
+                <a onclick="toggleContent('napustanje2')">NAPUŠTANJE PN S OZLIJEĐENOM OSOBOM</a>
+                <div id="napustanje2" class="hidden-content">
+                    <p><strong>Članak 175.1/3</strong></p>
+                    <p><strong>Kazna:</strong>1.320,00 - 2.650,00 eura ili 60 dana zatvora </p>
+                    <p><strong>Zaštitna mjera:</strong>12 mjeseci</p>
+
+                </div>
+            </li> 
+
+            <li class="category-item">
+                <a onclick="toggleContent('uklanjanje')">UKLANJANJE VOZILA KOD PN S MATERIJALNOM ŠTETOTM</a>
+                <div id="uklanjanje" class="hidden-content">
+                    <p><strong>Članak 176.1/4</strong></p>
+                    <p><strong>Kazna:</strong>60,00 eura</p>
+                </div>
+            </li> 
+             </ul>
+    </main>
+</body>
+</html>
