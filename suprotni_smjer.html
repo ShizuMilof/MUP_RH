@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg" />
+  </head>
+  <body>
+    <header>
+      <h3>SUPROTNI SMJER</h3>
+      <button onclick="goBack()" class="back-button">NATRAG</button>
+    </header>
+    <main>
+      <ul class="category-list">
+        <li class="category-item">
+          <a onclick="toggleContent('smjer1')">VOŽNJA U SUPROTNOM SMJERU (JEDNOSMJERNA, FIZIČKI ODVOJENE KOLNIČKE TRAKE ILI 4 PROMETNE TRAKE)</a>
+          <div id="smjer1" class="hidden-content">
+            <p><strong>Članak 49.2/4</strong></p>
+            <p>Opis - jednosmjerna ulica:</p>
+            <p>Isti se kretao navedenim vozilom kolnikom ulice &quot;X&quot; od smjera &quot;x&quot; prema &quot;x&quot; iako je navedena ulica kao jednosmjerna namjenjena za promet vozila od smjera &quot;x&quot; prema &quot;x&quot;</p>
+            <p><strong>Kazna:</strong> 390,00 eura</p>
+            <p>Opis - fizički odvojene kolničke trake:</p>
+            <p>
+              Isti se kretao navedenim vozilom &quot;x&quot; kolničkom trakom ulice &quot;x&quot; od smjera &quot;x&quot; prema &quot;x&quot; iako je navedena kolnička traka, koja je fizički odvojena od &quot;x&quot; kolničke trake namjenjena za promet vozila od smjera &quot;x&quot; prema
+              &quot;x&quot;
+            </p>
+            <p>Opis - 4 obilježene prometne trake:</p>
+            <p>
+              Isti se kretao navedenim voz. &quot;x&quot; kolničkom trakom, a &quot;x&quot; prom. trakom ulice &quot;x&quot; koja je cesta s kolnikom za promet u oba smjera na kojem postoje 4 obilježene prom. trake od smjera &quot;x&quot; prema &quot;x&quot; iako je navedena prom. traka, namjenjena
+              za promet vozila od smjera &quot;x&quot; prema &quot;x&quot;
+            </p>
+            <p>OPN</p>
+            <p><strong>Kazna:</strong> 260,00 - 660,00 eura</p>
+            <p>Zaštitna mjera:</p>
+            <p>1. put - 1 mjesec</p>
+            <p>2. put - 3 mjeseci</p>
+            <p>3. put - 6 mjeseci</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('smjer2')">VOŽNJA U SUPROTNOM SMJERU 3 PROMETNE TRAKE</a>
+          <div id="smjer2" class="hidden-content">
+            <p><strong>Članak 49.1/3</strong></p>
+            <p>Isti se kretao navedenim vozilom ulicom &quot;x&quot; koja je cesta s kolnikom za promet vozila u oba smjera sa 3 prometne trake &quot;x&quot;prometnom trakom koja se nalazi uz lijevi rub ceste u smjeru kretanja navedenog vozila</p>
+            <p><strong>Kazna:</strong> 260,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('smjer3')">VOŽNJA U SUPROTNOM SMJERU NA AUTOCESTI I BRZOJ CESTI</a>
+          <div id="smjer3" class="hidden-content">
+            <p><strong>Članak 49.2/5</strong></p>
+            <p>
+              Isti se kretao navedenim vozilom &quot;x&quot; kolničkom trakom autoceste (brza cesta ili cesta namjenjena isključivo za promet motornih vozila) &quot;x&quot; od smjera &quot;x&quot; prema &quot;x&quot; iako je navedena kolnička traka namjenjena za promet vozila od smjera &quot;x&quot;
+              prema &quot;x&quot;
+            </p>
+            <p><strong>Kazna:</strong> 1.3200,00 - 2.650,00 eura ili 60 dana zatvora</p>
+            <p>Zaštitna mjera:</p>
+            <p>1. put - 1 mjesec</p>
+            <p>2. put - 3 mjeseci</p>
+            <p>3. put - 6 mjeseci</p>
+            <p>NAPOMENA: Optužni prijedlog uz izdavanje obavijesti + (oduzimanje vozila ukoliko je najmanje 2 puta pravomoćno kažnjen)</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
