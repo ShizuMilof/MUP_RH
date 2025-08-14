@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg" />
+  </head>
+  <body>
+    <header>
+      <h3>PRETJECANJE</h3>
+      <button onclick="goBack()" class="back-button">NATRAG</button>
+    </header>
+    <main>
+      <ul class="category-list">
+        <li class="category-item">
+          <a onclick="toggleContent('kolone')">KOLONE</a>
+          <div id="kolone" class="hidden-content">
+            <p><strong>Članak 70.1.1/3</strong></p>
+            <p>Isti je prilikom upravljanja navedenim vozilom pretjecao (obilazio) kolonu vozila</p>
+            <p>OPN</p>
+            <p><strong>Kazna:</strong> 390,00 eura</p>
+            <p>Zaštitna mjera:</p>
+            <p>1. put - 1 mj</p>
+            <p>2. put - 3 mj</p>
+            <p>3. put - 6 mj</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('tunel')">TUNEL, MOST, ZAVOJ</a>
+          <div id="tunel" class="hidden-content">
+            <p><strong>Članak 72.1/2</strong></p>
+            <p>Isti je prilikom upravljanja navedenim vozilom izvršio radnju pretjecanja u tunelu (most, zavoj).</p>
+            <p>OPN</p>
+            <p><strong>Kazna:</strong> 390,00 eura</p>
+            <p>Zaštitna mjera:</p>
+            <p>1. put - 1 mj</p>
+            <p>2. put - 3 mj</p>
+            <p>3. put - 6 mj</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('pjesacki')">PJEŠAČKI PRIJELAZ</a>
+          <div id="pjesacki" class="hidden-content">
+            <p><strong>Članak 74.1/2</strong></p>
+            <p>Isti je prilikom upravljanja navedenim vozilom izvršio radnju pretjecanja vozila ispred pješačkog prijelaza</p>
+            <p>PN</p>
+            <p><strong>Kazna:</strong> 390,00 - 920,00 eura</p>
+            <p>Zaštitna mjera:</p>
+            <p>1. put - 1 mj</p>
+            <p>2. put - 3 mj</p>
+            <p>3. put - 6 mj</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('raskrizje')">U RASKRIŽJU</a>
+          <div id="raskrizje" class="hidden-content">
+            <p><strong>Članak 73.1/3</strong></p>
+            <p>Isti je prilikom upravljanja navedenim vozilom pretjecao u raskrižju</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
