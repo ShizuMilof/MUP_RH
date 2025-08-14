@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg" />
+  </head>
+  <body>
+    <header>
+      <h3>SVJETLA</h3>
+      <button onclick="goBack()" class="back-button">NATRAG</button>
+    </header>
+    <main>
+      <ul class="category-list">
+        <li class="category-item">
+          <a onclick="toggleContent('neupaljena-svjetla-nocu')">NEUPALJENA SVJETLA NA VOZILU NOĆU</a>
+          <div id="neupaljena-svjetla-nocu" class="hidden-content">
+            <p><strong>Članak 101.1/4</strong></p>
+            <p>Isti je upravljao navedenim vozilom tijekom noći te nije imao upaljena svjetla</p>
+            <p><strong>Kazna:</strong> 60,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('svjetla-danju-zimi')">NEUPALJENA SVJETLA NA VOZILU DANJU U ZIMSKOM RAZDOBLJU</a>
+          <div id="svjetla-danju-zimi" class="hidden-content">
+            <p><strong>Članak 102.1/3</strong></p>
+            <p>Isti je upravljao navedenim vozilom danju te nije imao upaljena dnevna ili kratka svjetla</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+            <p>NAPOMENA: u razdoblju od 1.11 do 31.3</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('neupaljena-svjetla-na-mtc')">NEUPALJENJA SVJETLA NA MTC I MOPEDU DANJU TIJEKOM CIJELE GODINE</a>
+          <div id="neupaljena-svjetla-na-mtc" class="hidden-content">
+            <p><strong>Članak 102.2/3</strong></p>
+            <p>Isti je upravljao navedenim vozilom danju te nije imao upaljena kratka svjetla</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('svjetla-tunel')">NEUPALJENJA KRATKA SVJETLA U TUNELU</a>
+          <div id="svjetla-tunel" class="hidden-content">
+            <p><strong>Članak 147.1/2</strong></p>
+            <p>Isti prilikom upravljanja navedenim vozilom kroz tunel &quot;x&quot; nije imao na vozilu upaljena kratka svjetla za osvjetljavanje ceste</p>
+            <p><strong>Kazna:</strong> 60,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('raznobojna-svjetla')">RAZNOBOJNA SVJETLA NA VOZILU</a>
+          <div id="raznobojna-svjetla" class="hidden-content">
+            <p><strong>Članak 42.1/4</strong></p>
+            <p>Isti je upravljao navedenim vozilom na kojem je bio postavljen uređaj za osvjetljavanje (davanje svjetlosnih znakova)</p>
+            <p><strong>Kazna:</strong> 60,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('rotacijsko-svjetlo')">ROTACIJSKO SVJETLO ILI ZVUČNA SIRENA</a>
+          <div id="rotacijsko-svjetlo" class="hidden-content">
+            <p><strong>Članak 153.1/7</strong></p>
+            <p>Isti je prilikom upravljanja navedenim vozilom upotrebljavao uređaj za davanje posebnih svjetlosnih (zvučnih) znakova</p>
+            <p><strong>Kazna:</strong> 90,00 eura</p>
+            <p>NAPOMENA: uređaj se oduzima uz potvrdu o privremenim oduzimanju predmeta</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('pokazivaci-smjera')">POKAZIVAČI SMJERA (ŽMIGAVCI)</a>
+          <div id="pokazivaci-smjera" class="hidden-content">
+            <p><strong>Članak 44.1/4</strong></p>
+            <p>Isti prilikom upravljanja navedenim vozilo:</p>
+            <p>1. prilikom mjenjanja prometne trake</p>
+            <p>2. uključivanja / isključivanja u promet</p>
+            <p>nije koristio pokazivače smjera.</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
