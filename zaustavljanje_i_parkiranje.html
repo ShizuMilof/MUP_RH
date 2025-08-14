@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg" />
+  </head>
+  <body>
+    <header>
+      <h3>ZAUSTAVLJANJE I PARKIRANJE</h3>
+      <button onclick="goBack()" class="back-button">NATRAG</button>
+    </header>
+    <main>
+      <ul class="category-list">
+        <li class="category-item">
+          <a onclick="toggleContent('vozilo-ometa-promet')">VOZILO OMETA NORMALAN TOK PROMETA ILI KRETANJE PJEŠAKA</a>
+          <div id="vozilo-ometa-promet" class="hidden-content">
+            <p><strong>Članak 78.1/3</strong></p>
+            <p>Opis - vozač prisutan:</p>
+            <p>Isti je parkirao / zaustavio navedeno vozilo na način koji predstavlja smetnju za normalan tok prometa</p>
+            <p>Opis - vozač odsutan:</p>
+            <p>Navedeno vozilo je parkirano na način koji predstavlja smetnju za normalan tok prometa</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('vozilo-na-sredini-kolnika')">VOZILO PARKIRANO NA SREDINI KOLNIKA</a>
+          <div id="vozilo-na-sredini-kolnika" class="hidden-content">
+            <p><strong>Članak 80.3/4</strong></p>
+            <p>Opis - vozač prisutan:</p>
+            <p>Isti je zaustavio / parkirao navedeno vozilo na sredini kolnika iako to mjesto nije obilježeno odgovarajućim prometnim znakom ili oznakom na kolniku kao mjesto za parkiranje vozila</p>
+            <p>Opis - vozač odsutan:</p>
+            <p>Navedeno vozilo je parkirano na sredini kolnika iako to mjesto nije obilježeno odgovarajućim prometnim znakom ili oznakom na kolniku kao mjesto za parkiranje vozila</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('utovara-na-kolniku')">OSOBA UTOVARA ILI ISTOVARA STVARI NA KOLNIKU</a>
+          <div id="utovara-na-kolniku" class="hidden-content">
+            <p><strong>Članak 81.2/3</strong></p>
+            <p>Isti je vršio utovar / istovar stvari iz navedenog parkiranog vozila i time ometao kretanje drugih sudionika u prometu (ili ugrožavao sigurnost prometa)</p>
+            <p><strong>Kazna:</strong> 60,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('vozilo-na-pjesackom')">VOZILO NA OBILJEŽENOM PJEŠAČKOM PRIJELAZU</a>
+          <div id="vozilo-na-pjesackom" class="hidden-content">
+            <p><strong>Članak 82.1.1/4</strong></p>
+            <p><strong>Opis - vozač prisutan:</strong></p>
+            <p>Isti je parkirao / zaustavio navedeno vozilo na:</p>
+            <p>1. obilježenom pješačkom prijelazu</p>
+            <p>2. udaljenosti manjoj od 5 metara od obilježenog pješačkog prijelaza</p>
+            <p>3. prijelazu biciklističke staze preko kolnika</p>
+            <p><strong>Opis - vozač odsutan</strong></p>
+            <p>Navedeno vozilo parkirano na:</p>
+            <p>1. obilježenom pješačkom prijelazu</p>
+            <p>2. udaljenosti manjoj od 5 metara od obilježenog pješačkog prijelaza</p>
+            <p>3. prijelazu biciklističke staze preko kolnika</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('vozilo-preko-pruge')">VOZILO NA PRIJELAZU PREKO PRUGE</a>
+          <div id="vozilo-preko-pruge" class="hidden-content">
+            <p><strong>Članak 82.1.2/4</strong></p>
+            <p><strong>Opis - vozač prisutan:</strong></p>
+            <p>Isti je parkirao / zaustavio navedeno vozilo na prijelazu ceste preko željezničke (tramvajske) pruge u istoj razini</p>
+            <p><strong>Opis - vozač odsutan</strong></p>
+            <p>Navedeno vozilo parkirano na prijelazu ceste preko željezničke (tramvajske) pruge u istoj razini</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('vozilo-na-pruzi')">VOZILO NA PRUZI</a>
+          <div id="vozilo-na-pruzi" class="hidden-content">
+            <p><strong>Članak 82.1.3/4</strong></p>
+            <p><strong>Opis - vozač prisutan:</strong></p>
+            <p>Isti je parkirao / zaustavio navedeno vozilo na željezničkoj (tramvajskoj) pruzi (u blizini pruga čime sprječava promet vozila koja se kreću po tračnicama</p>
+            <p><strong>Opis - vozač odsutan:</strong></p>
+            <p>Navedeno vozilo parkirano na željezničkoj (tramvajskoj) pruzi (u blizini pruga čime sprječava promet vozila koja se kreću po tračnicama</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('vozilo-na-raskrizju')">VOZILO NA RASKRIŽJU I NA UDALJENOSTI MANJOJ OD 5KM OD NAJBLIŽEG RUBA POPREČNOG KOLNIKA</a>
+          <div id="vozilo-na-raskrizju" class="hidden-content">
+            <p><strong>Članak 82.1.4/4</strong></p>
+            <p><strong>Opis - vozač prisutan:</strong></p>
+            <p>Isti je parkirao / zaustavio navedeno vozilo na raskrižju (na udaljenosti manjoj od 5 metara od najbližeg ruba poprečnog kolnika)</p>
+            <p><strong>Opis - vozač odsutan:</strong></p>
+            <p>Navedeno vozilo parkirano na raskrižju (na udaljenosti manjoj od 5 metara od najbližeg ruba poprečnog kolnika)</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('<vozilo-na-mostu-tunel>')">VOZILU U TUNELU, NA MOSTOVIMA, U PODVOŽNJACIMA I NA NADVOŽNJACIMA TE NA UDALJENOSTI MANJOJ OD 15M</a>
+          <div id="vozilo-na-mostu-tunel" class="hidden-content">
+            <p><strong>NEMA!</strong></p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('vrh-zavoj')">VRH PRIJEVOJA ILI ZAVOJA</a>
+          <div id="vrh-zavoj" class="hidden-content">
+            <p><strong>NEMA!</strong></p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('zaklanja-znak')">VOZILO ZAKLANJA POSTAVLJENI PROMETNI ZNAK</a>
+          <div id="zaklanja-znak" class="hidden-content">
+            <p><strong>Članak 82.1.7/4</strong></p>
+            <p><strong>Opis - vozač prisutan:</strong></p>
+            <p>Isti je parkirao / zaustavio navedeno vozilo na mjestu na kojem vozilom zaklanja:</p>
+            <p>1. postavljeni prometni znak</p>
+            <p>2. uređaj za davanje znakova prometnim svjetlima</p>
+            <p><strong>Opis - vozač odsutan:</strong></p>
+            <p>Navedeno vozilo je parkirano na mjestu na kojem zaklanja:</p>
+            <p>1. postavljeni prometni znak</p>
+            <p>2. uređaj za davanje znakova prometnim svjetlima</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('vozilo-na-biciklistickoj-traci')">VOZILO NA BICIKLISTIČKOJ TRACI ILI STAZI</a>
+          <div id="vozilo-na-biciklistickoj-traci" class="hidden-content">
+            <p><strong>NEMA!</strong></p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('vozilo-na-stajalistu-javnog')">VOZILO NA STAJALIŠTU JAVNOG PRIJEVOZA</a>
+          <div id="vozilo-na-stajalistu-javnog" class="hidden-content">
+            <p><strong>Članak 82.1.9/4</strong></p>
+            <p><strong>Opis - vozač prisutan:</strong></p>
+            <p>Isti je parkirao / zaustavio navedeno vozilo na dijelu kolnika koji je kao stajalište za vozila javnog prijevoza putnika obilježen oznakama na kolniku</p>
+            <p><strong>Opis - vozač odsutan:</strong></p>
+            <p>Navedeno vozilo je parkirano na dijelu kolnika koji je kao stajalište za vozila javnog prijevoza putnika obilježen oznakama na kolniku</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('vozilo-na-nogostupu')">VOZILO NA NOGOSTUPU ILI PJEŠAČKOJ ZONI</a>
+          <div id="vozilo-na-nogostupu" class="hidden-content">
+            <p><strong>Članak 82.1.10/4</strong></p>
+            <p><strong>Opis - vozač prisutan:</strong></p>
+            <p>Isti je parkirao / zaustavio navedeno vozilo na nogostupu, a nije ostavio najmanje 1,6 m širine na površini za kretanje pješaka ili u pješačkoj zoni</p>
+            <p><strong>Opis - vozač odsutan:</strong></p>
+            <p>Navedeno vozilo je parkirano na nogostupu, a nije ostavljeno najmanje 1,6 m širine na površini za kretanje pješaka ili u pješačkoj zoni</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('vozilo-ispred-kolnog-ulaza')">VOZILO ISPRED KOLNOG ULAZA, SKLONIŠTE, DVORIŠTE ILI GARAŽU</a>
+          <div id="vozilo-ispred-kolnog-ulaza" class="hidden-content">
+            <p><strong>NEMA!</strong></p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('vozilo-na-mjestu-za-invalide')">VOZILO NA MJESTU ZA INVALIDE</a>
+          <div id="vozilo-na-mjestu-za-invalide" class="hidden-content">
+            <p><strong>Članak 82.1.13/3</strong></p>
+            <p><strong>Opis - vozač prisutan:</strong></p>
+            <p>Isti je parkirao / zaustavio navedeno vozilo na mjestu rezervirano za parkiranje vozila osoba s invaliditetom iako navedeno  vozilo nema istaknut znak pristupačnosti</p>
+            <p><strong>Opis - vozač odsutan:</strong></p>
+            <p>Navedeno vozilo parkirano na mjestu rezervirano za parkiranje vozila osoba s invaliditetom iako navedeno  vozilo nema istaknut znak pristupačnosti</p>
+            <p><strong>Kazna:</strong> 90,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('vozilo-onemogucuje-pristup')">VOZILO ONEMOGUĆUJE PRISTUP DRUGIM VOZILIMA RADI PARKIRANJA ILI IZLAZAK VEĆ PARKIRANOG VOZILA</a>
+          <div id="vozilo-onemogucuje-pristup" class="hidden-content">
+            <p><strong>Članak 83.1.3/2</strong></p>
+            <p><strong>Opis - vozač prisutan:</strong></p>
+            <p>Isti je parkirao / zaustavio navedeno vozilo na način kojim je onemogućio pristup drugom vozilu radi parkiranja (izlazak već parkiranom vozilu)</p>
+            <p><strong>Opis - vozač odsutan:</strong></p>
+            <p>Navedeno vozilo parkirano na način kojim onemogućuje pristup drugim vozilima radi parkiranja (izlazak nekom već parkiranom vozilu)</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
