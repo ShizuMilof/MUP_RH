@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg" />
+  </head>
+  <body>
+    <header>
+      <h3>PRIJEVOZ OSOBA</h3>
+      <button onclick="goBack()" class="back-button">NATRAG</button>
+    </header>
+    <main>
+      <ul class="category-list">
+        <li class="category-item"><a href="./prijevoz_vise_osoba_od_upisanog_u_pd.html">PRIJEVOZ VIŠE OSOBA OD UPISANOG U PROMETNOJ DOZVOLI</a></li>
+
+        <li class="category-item"><a href="./prijevoz_osoba_u_vozilu_otvaranje_vrata_iznutra.html">PRIJEVOZ OSOBA U ZATVORENOM PROSTORU VOZILA KOJA SE NE MOGU OTVORITI VRATA IZNUTRA</a></li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('vozac-i-dijete-12-god')">VOZAČ MOPEDA ILI MTC PREVOZI DIJETE MLAĐE OD 12 GODINA</a>
+          <div id="vozac-i-dijete-12-god" class="hidden-content">
+            <p><strong>Članak 161.4/6</strong></p>
+            <p>Isti je prilikom upravljanja navedenim vozilom prevozio dijete mlađe od 12 godina</p>
+            <p><strong>Kazna:</strong> 60,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('osoba-ometa-vozaca')">OSOBA KOJA SE PREVOZI OMETA VOZAČA</a>
+          <div id="osoba-ometa-vozaca" class="hidden-content">
+            <p><strong>Članak 162.1/2</strong></p>
+            <p>Isti je u svojstvu putnika prilikom prijevoza navedenim vozilom ometao vozača u upravljanju vozilom</p>
+            <p><strong>Kazna:</strong> 60,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('vozac-ili-putnik-pojas')">VOZAČ ILI PUTNIK NE KORISTI SIGURNOSNI POJAS</a>
+          <div id="vozac-ili-putnik-pojas" class="hidden-content">
+            <p><strong>Članak 163.1/8</strong></p>
+            <p>Vozač:</p>
+            <p>Isti prilikom upravljanja navedenim vozilom nije koristio sigurnosni pojas na način koji je odredio proizvođač sigurnosnog pojasa</p>
+            <p>Putnik:</p>
+            <p>Isti u svojstvu putnika prilikom prijevoza navedenim vozilom nije koristio sigurnosni pojas na način koji je odredio proizvođač sigurnosnog pojasa</p>
+            <p><strong>Kazna:</strong> 130,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('vozac-dijete-sjedalica')">VOZAČ NE PREVOZI DIJETE U SJEDALICI</a>
+          <div id="vozac-dijete-sjedalica" class="hidden-content">
+            <p><strong>Članak 163.4/9</strong></p>
+            <p>Vozač:</p>
+            <p>Isti je upravljao navedenim vozilom te je prevozio dijete niže od 150 cm koje nije bilo pravilno smješteno u posebnoj sigurnosnoj sjedalici</p>
+            <p><strong>Kazna:</strong> 130,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('vozac-dijete-sigurnosni-pojas')">VOZAČ NIJE DIJETE VEZAO SIGURNOSNIM POJASOM</a>
+          <div id="vozac-dijete-sigurnosni-pojas" class="hidden-content">
+            <p><strong>Članak 163.5/9</strong></p>
+            <p>Isti je upravljao navedenim vozilom te je na stražnjem sjedalu prevozio dijete koje nije bilo pravilno vezano sigurnosnim pojasom za odrasle osobe</p>
+            <p><strong>Kazna:</strong> 130,00 eura</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

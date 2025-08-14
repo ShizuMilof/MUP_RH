@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg" />
+  </head>
+  <body>
+    <header>
+      <h3>PRIJEVOZ VIŠE OSOBA OD UPISANOG U PROMETNOJ DOZVOLI</h3>
+      <button onclick="goBack()" class="back-button">NATRAG</button>
+    </header>
+    <main>
+      <ul class="category-list">
+        <li class="category-item">
+          <a onclick="toggleContent('vozac1')">VOZAČ</a>
+          <div id="vozac1" class="hidden-content">
+            <p><strong>Članak 158.1/4</strong></p>
+            <p>Isti je prilikom upravljanja navedenim vozilom prevozio više osoba od upisanog u prometnoj dozvoli</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('pravna-osoba-obrtnik')">PRAVNA OSOBA / FIZIČKA OSOBA OBRTNIK</a>
+          <div id="pravna-osoba-obrtnik" class="hidden-content">
+            <p><strong>Članak 158.1/2</strong></p>
+            <p>Pravna osoba čiji je vozač XY (OIB) prevozio više osoba od upisanog u prometnoj dozvoli (X)</p>
+            <p><strong>Kazna:</strong> 660,00 - 1990,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('odgovorna-osoba-pravnoj')">ODGOVORNA OSOBA U PRAVNOJ OSOBI</a>
+          <div id="odgovorna-osoba-pravnoj" class="hidden-content">
+            <p><strong>Članak 158.1/3</strong></p>
+            <p>Odgovorna osoba u pravnoj osobi (OIB) čiji je vozač XY (OIB) prevozio više osoba od upisanog u prometnoj dozvoli (X)</p>
+            <p><strong>Kazna:</strong> 190,00 - 660,00 eura</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
