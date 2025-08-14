@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg" />
+  </head>
+  <body>
+    <header>
+      <h3>PREVENTIVNI TEHNICKI</h3>
+      <button onclick="goBack()" class="back-button">NATRAG</button>
+    </header>
+    <main>
+      <ul class="category-list">
+        <li class="category-item">
+          <a onclick="toggleContent('pravna-osoba')">PRAVNA OSOBA / FIZIČKA OSOBA OBRTNIK</a>
+          <div id="pravna-osoba" class="hidden-content">
+            <p><strong>Članak 257.1/4</strong></p>
+            <p>Pravna osoba (fizička osoba - obrtnik) čiji je vozač XY upravljao T.A (O.A) marke XY iako mu je isteklo važenje preventivnog tehničkog pregleda s datumom: xy uvidom u karton preventivnog teh. pregleda ser. br.:</p>
+            <p><strong>Kazna:</strong> 660,00 - 1.990,00 eura</p>
+            <p>Napomena: ispisuje se malo izvješće s podacima, opis prekrsaja i bez upisane novčane kazne te se ne zauzima broj</p>
+            <p>Vozila: rent a car, autoškola, taxi, vozila HMP, autobusi, T.A i priključna vozila za prijevoz opasnih tvari i T.A i priključna vozila čija NDM prelazi 7,5 t</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('odgovorna-osoba')">ODGOVORNA OSOBA U PRAVNOJ OSOBI</a>
+          <div id="odgovorna-osoba" class="hidden-content">
+            <p><strong>Članak 257.1/5</strong></p>
+            <p>Odgovorna osoba u pravnoj osobi &quot;x&quot; čiji je vozač XY upravljao T.A (O.A) marke XY iako mu je isteklo važenje preventivnog tehničkog pregleda s datumom: xy uvidom u karton preventivnog teh. pregleda ser. br.: x</p>
+            <p><strong>Kazna:</strong> 190,00 - 660,00 eura</p>
+            <p>Napomena: ispisuje se malo izvješće s podacima, opis prekrsaja i bez upisane novčane kazne te se ne zauzima broj</p>
+            <p>Vozila: rent a car, autoškola, taxi, vozila HMP, autobusi, T.A i priključna vozila za prijevoz opasnih tvari i T.A i priključna vozila čija NDM prelazi 7,5 t</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
