@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg" />
+  </head>
+  <body>
+    <header>
+      <h3>PREKORACENJE NDM</h3>
+      <button onclick="goBack()" class="back-button">NATRAG</button>
+    </header>
+    <main>
+      <ul class="category-list">
+        <li class="category-item">
+          <a onclick="toggleContent('vozac')">VOZAČ</a>
+          <div id="vozac" class="hidden-content">
+            <p><strong>Članak 154.1</strong></p>
+            <p>Opis:</p>
+            <p>Isti je upravljao navedenim vozilom kojeg je opteretio iznad NDM (NDM po prometnoj dozvoli iznosi &quot;x&quot; kg, a NDM po otpremnici br. &quot;x&quot; od &quot;x&quot; iznosi &quot;x&quot; kg)</p>
+            <p>Napomena:</p>
+            <p>- ispisati malo izvješće bez zauzimanja broja</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('pravna-osoba')">PRAVNA OSOBA / FIZIČKA OSOBA OBRTNIK</a>
+          <div id="pravna-osoba" class="hidden-content">
+            <p><strong>Članak 154.1</strong></p>
+            <p>Opis:</p>
+            <p>Pravna osoba (fizička osoba obrtnik) čiji je vozač &quot;X&quot; upravljao T.A marke &quot;x&quot; kojeg je preopteretio iznad NDM (NDM po prometnoj dozvoli iznosi &quot;x&quot; kg, a NDM po otpremnici br. &quot;x&quot; od &quot;x&quot; iznosi &quot;x&quot; kg)</p>
+            <p>Napomena:</p>
+            <p>- ispisati malo izvješće bez zauzimanja broja</p>
+          </div>
+        </li>
+        <li class="category-item">
+          <a onclick="toggleContent('odgovorna-osoba')">ODGOVORNA OSOBA U PRAVNOJ OSOBI</a>
+          <div id="odgovorna-osoba" class="hidden-content">
+            <p><strong>Članak 154.1</strong></p>
+            <p>Opis:</p>
+            <p>Odgovorna osoba u pravnoj osobi &quot;X&quot; čiji je vozač &quot;X&quot; upravljao T.A marke &quot;x&quot; kojeg je preopteretio iznad NDM (NDM po prometnoj dozvoli iznosi &quot;x&quot; kg, a NDM po otpremnici br. &quot;x&quot; od &quot;x&quot; iznosi &quot;x&quot; kg)</p>
+            <p>Napomena:</p>
+            <p>- ispisati malo izvješće bez zauzimanja broja</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
