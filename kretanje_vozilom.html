@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg" />
+  </head>
+  <body>
+    <header>
+      <h3>TEHNICKA NEISPRAVNOST VOZILA</h3>
+      <button onclick="goBack()" class="back-button">NATRAG</button>
+    </header>
+    <main>
+      <ul class="category-list">
+        <li class="category-item">
+          <a onclick="toggleContent('prestojavanje-raskrizje')">PRESTROJAVANJE U RASKRIŽJU</a>
+          <div id="prestojavanje-raskrizje" class="hidden-content">
+            <p><strong>Članak 58.2/3</strong></p>
+            <p>Isti je upravljao navedenim vozilom lijevom/desnom prometnom trakom zapadne/istocne/sjevrne/juzne kolnicke trake ceste x.</p>
+            <p>Dolaskom do raskrizja s cestom x isti je</p>
+            <p>1. Zadržao smjer kretanja</p>
+            <p>2. obavio radnju skretanja ulijevo/udesno</p>
+            <p>iako je navedena prometna traka namjenjena za vozila koja na raskrizju:</p>
+            <p>1. zadrzavaju smjer kretanja</p>
+            <p>2. Vrše radnju skretanja ulijevo/ udesno</p>
+
+            <p><strong>Kazna:</strong> 90,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('slalom-voznja')">SLALOM VOŽNJA</a>
+          <div id="slalom-voznja" class="hidden-content">
+            <p><strong>Članak 75.1/4</strong></p>
+            <p>Isti je prilikom upravljanja navedenim vozilom na cesti na kojoj postoje &quot;x&quot; prometne trake namjenjene za promet vozila u istom smjeru, dok su na cesti kolone vozila, prelazio iz trake u traku (slalom vožnja)</p>
+            <p><strong>Kazna:</strong> 130,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('izbacivanje')">IZBACIVANJE IZ VOZILA</a>
+          <div id="izbacivanje" class="hidden-content">
+            <p><strong>Članak 35.1/7</strong></p>
+            <p>Isti prilikom upravljanja navedenim vozilom izbacivao predmete (otpatke) koji su ometali (ugrozili) sigurnost prometa</p>
+            <p><strong>Kazna:</strong> 130,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('lijeva-traka')">LIJEVA TRAKA AUTOCESTA</a>
+          <div id="lijeva-traka" class="hidden-content">
+            <p><strong>Članak 142.1/6</strong></p>
+            <p>Isti upravljao navedenim vozilom autocestom u lijevoj prometnoj traci.</p>
+            <p><strong>Kazna:</strong> 260,00 eura</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
