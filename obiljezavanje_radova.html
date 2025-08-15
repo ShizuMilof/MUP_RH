@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg" />
+  </head>
+  <body>
+    <header>
+      <h3>ZIMSKA OPREMA I KUTIJA PRVE POMOCI</h3>
+      <button onclick="goBack()" class="back-button">NATRAG</button>
+    </header>
+    <main>
+      <ul class="category-list">
+        <li class="category-item">
+          <a onclick="toggleContent('obiljezavanje')">OBILJEŽAVANJE RADOVA</a>
+          <div id="obiljezavanje" class="hidden-content">
+            <p><strong>NEMA!</strong></p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('regulacija')">REGULACIJA PROMETA ZBOG RADOVA NA CESTI</a>
+          <div id="regulacija" class="hidden-content">
+            <p><strong>NEMA!</strong></p>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
