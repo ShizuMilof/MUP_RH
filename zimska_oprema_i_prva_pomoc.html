@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg" />
+  </head>
+  <body>
+    <header>
+      <h3>ZIMSKA OPREMA I KUTIJA PRVE POMOCI</h3>
+      <button onclick="goBack()" class="back-button">NATRAG</button>
+    </header>
+    <main>
+      <ul class="category-list">
+        <li class="category-item">
+          <a onclick="toggleContent('snijeg-na-vozilu')">SNIJEG NA VOZILU ILI NEMA PROPISANU ZIMSKU OPREMU</a>
+          <div id="snijeg-na-vozilu" class="hidden-content">
+            <p><strong>Članak 193.2/6</strong></p>
+            <p>Opis - snijeg:</p>
+            <p>Isti je upravljao navedenim vozilom, a prije uključivanja u promet nije očistio zaleđena vjetrobranska stakla i snijeg na vozilu.</p>
+            <p>Opis - zimska oprema:</p>
+            <p>Isti je upravljao navedenim vozilom za vrijeme zimskih uvjeta na cesti bez propisane zimske opreme</p>
+
+            <p><strong>Kazna:</strong> 130,00 eura</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('nekoristenje-zimske-opreme')">PRAVNA OSOBA / FIZIČKA OSOBA OBRTNIK - NEKORIŠTENJE ZIMSKE OPREME</a>
+          <div id="nekoristenje-zimske-opreme" class="hidden-content">
+            <p><strong>Članak 193.2/4</strong></p>
+            <p>Pravna osoba (Fizička osoba - obrtnik) čiji je vozač XY upravljao T.A (O.A) marke XY bez propisane zimske opreme za vrijeme zimskih uvjeta na navedenoj cesti</p>
+            <p><strong>Kazna:</strong> 660,00 - 1.990,00 eura</p>
+            <p>NAPOMENA: - ispisuje se malo izvješće s podacima, opis prekrsaja i bez upisane novčane kazne te se ne zauzima broj</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('odgovorna-osoba')">ODGOVORNA OSOBA - ZIMSKA OPREMA</a>
+          <div id="odgovorna-osoba" class="hidden-content">
+            <p><strong>Članak 193.2/5</strong></p>
+            <p>Odgovorna osoba u pravnoj osobi &quot;x&quot; čiji je vozač XY upravljao T.A (O.A) marke XY bez propisane zimske opreme za vrijeme zimskih uvjeta na navedenoj cesti</p>
+            <p><strong>Kazna:</strong> 190,00 - 660,00 eura</p>
+            <p>NAPOMENA: - ispisuje se malo izvješće s podacima, opis prekrsaja i bez upisane novčane kazne te se ne zauzima broj</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('kutija')">KUTIJA PRVE POMOĆI</a>
+          <div id="kutija" class="hidden-content">
+            <p><strong>Članak 236.1/9</strong></p>
+            <p>Isti prilikom upravljanja navedenim vozilom nije u vozilu posjedovao kutiju prve pomoći</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
