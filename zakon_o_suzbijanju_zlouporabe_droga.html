@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg" />
+  </head>
+  <body>
+    <header>
+      <h3>ZAKON O SUZBIJANJU ZLOUPORABE DROGA</h3>
+      <button onclick="goBack()" class="back-button">NATRAG</button>
+    </header>
+    <main>
+      <ul class="category-list">
+        <li class="category-item"><a href="https://www.zakon.hr/z/293/zakon-o-suzbijanju-zlouporabe-droga" target="_blank" rel="noopener noreferrer">ZAKON</a></li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('prekrsaji-posjedovanje')">PREKRŠAJI - POSJEDOVANJE</a>
+          <div id="prekrsaji-posjedovanje" class="hidden-content">
+            <p><strong>Članak 3 st. 1 kažnjivo po čl. 54 st. 3</strong></p>
+            <p>Opis - marihuana:</p>
+            <p>PVC paketić (smotuljak) - ručno spravljena cigareta (joint) sa sadržajem zelene biljne materije karakterističnog mirisa i izgleda na opojnu drogu &quot;marihuana&quot; sveukupne težine &quot;x&quot; grama</p>
+            <p>Napomena:</p>
+            <p>1. optužni prijedlog + izvješće</p>
+            <p>2. ispisuje se potvrda o privremenom oduzimanju predmeta</p>
+            <p>3. službena bilješka o zaticanju</p>
+            <p>4. bilješka o preliminarnom ispitivanju</p>
+            <p><strong>Kazna: </strong>5.000,00 - 20.000,00 kn</p>
+          </div>
+        </li>
+
+        <li class="category-item"><a href="./lista_lijekova.html">LISTA LIJEKOVA</a></li>
+      </ul>
+    </main>
+  </body>
+</html>
