@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg" />
+  </head>
+  <body>
+    <header>
+      <h3>ISTEK OSIGURANJA</h3>
+      <button onclick="goBack()" class="back-button">NATRAG</button>
+    </header>
+    <main>
+      <ul class="category-list">
+        <li class="category-item">
+          <a onclick="toggleContent('fizicka-osoba')">FIZIČKA OSOBA</a>
+          <div id="fizicka-osoba" class="hidden-content">
+            <p><strong>Članak 4/1, kažnjivo po 65/1</strong></p>
+            <p>Opis vlasnik - vozač:</p>
+            <p>Isti je kao vlasnik upravljao navedenim vozilom iako mu je istekla polica obveznog autoosiguranja s datumom:</p>
+            <p>Opis vozač nije vlasnik nego korisnik:</p>
+            <p>Isti je kao korisnik upravljao navedenim vozilom iako mu je istekla polica obveznog autoosiguranja s datumom:</p>
+            <p>Kazna: 5.000,00 - 50.000,00 kn</p>
+            <p>NAPOMENA: kažnjivo nakon proteka 30 dana od dana isteka osiguranja (čl. 8 st. 6)</p>
+          </div>
+        </li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('pravna-osoba')">PRAVNA OSOBA</a>
+          <div id="pravna-osoba" class="hidden-content">
+            <p><strong>Članak 154.1</strong></p>
+            <p>Pravna osoba čiji je vozač XY upravljao T.A (O.A) marke XY iako je za navedeno vozilo istekla polica obveznog autoosiguranja s datumom:</p>
+            <p>Kazna: 5.000,00 - 50.000,00 kn</p>
+            <p>NAPOMENA: kažnjivo nakon proteka 30 dana od dana isteka osiguranja (čl. 8 st. 6)</p>
+          </div>
+        </li>
+        <li class="category-item">
+          <a onclick="toggleContent('odgovorna-osoba')">ODGOVORNA OSOBA U PRAVNOJ OSOBI</a>
+          <div id="odgovorna-osoba" class="hidden-content">
+            <p><strong>Članak 4/1, kažnjivo po 65/2</strong></p>
+            <p>Odgovorna osoba čiji je vozač XY upravljao T.A (O.A) marke XY iako je za navedeno vozilo istekla polica obveznog autoosiguranja s datumom:</p>
+            <p>Kazna: 1.000,00 - 5.000,00 kn</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZSPC MUP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="images/mup.jpg" />
+  </head>
+  <body>
+    <header>
+      <h3>ZAKON O OBVEZNIM OSIGURANJIMA U PROMETU</h3>
+      <button onclick="goBack()" class="back-button">NATRAG</button>
+    </header>
+    <main>
+      <ul class="category-list">
+        <li class="category-item"><a href="./zakon_o_obaveznim_osiguranjima_u_prometu_prekrsaji_istek_osiguranja.html">ISTEK OSIGURANJA</a></li>
+
+        <li class="category-item">
+          <a onclick="toggleContent('nema-policu')">NEMA POLICU AUTOOSIGURANJA KOD SEBE</a>
+          <div id="nema-policu" class="hidden-content">
+            <p><strong>Članak 6/1, kažnjivo po 66/1</strong></p>
+            <p>Isti na zahtjev policijskog službenika nije predočio policu obveznog autoosiguranja</p>
+            <p><strong>Kazna: </strong>300,00 kn - 1.000,00 kn</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
