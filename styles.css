@@ -36,7 +36,7 @@ header {
     padding: 15px;
     max-width: 1200px;
     border-radius: 8px;
-    border: 2px solid #070783;
+    border: 2px solid #01356d;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -71,7 +71,7 @@ header {
 .category-item:hover {
     transform: scale(1.05);
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
-    background-color: #007bff;
+    background-color: #01356d;
 }
 .menu {
     display: none;
@@ -85,7 +85,7 @@ header {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
-    background: #007bff;
+    background: #01356d;
     color: white;
     border: none;
     border-radius: 5px;
