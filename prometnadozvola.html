@@ -1,138 +1,114 @@
 <!DOCTYPE html>
 <html lang="hr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZSPC MUP</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
     <script defer src="script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h3>PROMETNA DOZVOLA</h3>
-        <button onclick="goBack()" class="back-button">NATRAG</button>
-
+      <h3>PROMETNA DOZVOLA</h3>
+      <button onclick="goBack()" class="back-button">NATRAG</button>
     </header>
     <main>
-        <ul class="category-list">
-                <li class="category-item"><a href="./istekpdviseod15dana.html">ISTEK PD VIŠE OD 15 DANA ILI NEREGISTRIRANO VOZILO(OSIM TRAKTORA I RADNOG STROJA)</a></li>
+      <ul class="category-list">
+        <li class="category-item"><a href="./istekpdviseod15dana.html">ISTEK PD VIŠE OD 15 DANA ILI NEREGISTRIRANO VOZILO (OSIM TRAKTORA I RADNOG STROJA)</a></li>
 
-                <li class="category-item"><a href="./istekpddo15dana.html">ISTEK PD DO 15 DANA ILI NEREGISTRIRANO VOZILO(TRAKTOR I RADNI STROJ)</a></li>
+        <li class="category-item"><a href="./istekpddo15dana.html">ISTEK PD DO 15 DANA ILI NEREGISTRIRANO VOZILO (TRAKTOR I RADNI STROJ)</a></li>
 
-                <li class="category-item"><a href="./odjavavozila.html">ODJAVA VOZILA</a></li>
+        <li class="category-item"><a href="./odjavavozila.html">ODJAVA VOZILA</a></li>
 
-         
+        <li class="category-item">
+          <a onclick="toggleContent('laka-prikolica')">LAKA PRIKOLICA NEMA REG. PLOČICU</a>
+          <div id="laka-prikolica" class="hidden-content">
+            <p><strong>Članak 238.3/9</strong></p>
+            <p>Isti je upravljao navedenim vozilom i pritom vukao laku prikolicu koja nije označena registarskom pločicom</p>
 
-        
-            <li class="category-item">
-                <a  onclick="toggleContent('laka-prikolica')">LAKA PRIKOLICA NEMA REG. PLOČICU</a>
-                <div id="laka-prikolica" class="hidden-content">
-                      <p><strong>Članak 238.3/9</strong></p>
-                    <p>Isti je upravljao navedenim vozilom i pritom vukao laku prikolicu koja nije označena registarskom pločicom</p>
-                  
-                    <p><strong>Kazna:</strong> 30,00 eura</p> 
-                </div>
-            </li>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
 
-            <li class="category-item">
-                <a  onclick="toggleContent('istek-pokusnih-plocica')">ISTEK VAŽENJA POKUSNIH PLOČICA(VRIJEDE 15 DANA)</a>
-                <div id="istek-pokusnih-plocica" class="hidden-content">
-                     <p><strong>Članak 239.2/8</strong></p>
-                    <p>Isti je upravljao navedenim vozilom poslije isteka važenja pokusnih pločica</p>
-                    <p><strong>Kazna:</strong> 30,00 eura</p> 
-                    <p><strong>NAPOMENA:</strong> vrijede 15 dana( tj. 3 dana ako je oznaka 3)</p> 
+        <li class="category-item">
+          <a onclick="toggleContent('istek-pokusnih-plocica')">ISTEK VAŽENJA POKUSNIH PLOČICA (VRIJEDE 15 DANA)</a>
+          <div id="istek-pokusnih-plocica" class="hidden-content">
+            <p><strong>Članak 239.2/8</strong></p>
+            <p>Isti je upravljao navedenim vozilom poslije isteka važenja pokusnih pločica</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+            <p><strong>NAPOMENA:</strong> vrijede 15 dana( tj. 3 dana ako je oznaka 3)</p>
+          </div>
+        </li>
 
+        <li class="category-item">
+          <a onclick="toggleContent('vozac-nema-potvrdu')">VOZAČ KOD SEBE NEMA POTVRDU O UPORABI POKUSNIH PLOČICA</a>
+          <div id="vozac-nema-potvrdu" class="hidden-content">
+            <p><strong>Članak 239.3/8</strong></p>
+            <p>Isti je upravljao navedenim vozilom, a kod sebe nema važeću potvrdu o upotrebi pokusnih pločica</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
 
-                </div>
-            </li>
-            
-            <li class="category-item">
-                <a  onclick="toggleContent('vozac-nema-potvrdu')">VOZAČ KOD SEBE NEMA POTVRDU O UPORABI POKUSNIH PLOČICA</a>
-                <div id="vozac-nema-potvrdu" class="hidden-content">
-                    <p><strong>Članak 239.3/8</strong></p>
-                    <p>Isti je upravljao navedenim vozilom, a kod sebe nema važeću potvrdu o upotrebi pokusnih pločica</p>
-                    <p><strong>Kazna:</strong> 30,00 eura</p> 
+        <li class="category-item">
+          <a onclick="toggleContent('vozac-nema-potvrdu-prenos')">VOZAČ KOD SEBE NEMA POTVRDU O UPORABI PRENOSIVIH PLOČICA</a>
+          <div id="vozac-nema-potvrdu-prenos" class="hidden-content">
+            <p><strong>Članak 240.4/9</strong></p>
+            <p>Isti je upravljao navedenim vozilom, a kod sebe nije imao važeću potvrdu i prometnu dozvolu za prenosive pločice</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+            <p><strong>NAPOMENA:</strong>izdaju se najduže na rok od 1 godine</p>
+          </div>
+        </li>
 
-                </div>
-            </li>
+        <li class="category-item">
+          <a onclick="toggleContent('vozac-nema-vazecu-pd')">VOZAČ NEMA VAŽEĆU PD ZA IZVOZNE PLOČICE</a>
+          <div id="vozac-nema-vazecu-pd" class="hidden-content">
+            <p><strong>Članak 241.5/8</strong></p>
+            <p>Isti je upravljao navedenim vozilom, a kod sebe nije imao važeću prometnu dozvolu za izvozne pločice</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
 
+        <li class="category-item">
+          <a onclick="toggleContent('vozac-nema-potvrdu-izvozne')">VOZAČ KOD SEBE NEMA VAŽEĆU PD</a>
+          <div id="vozac-nema-potvrdu-izvozne" class="hidden-content">
+            <p><strong>Članak 242.3/5</strong></p>
+            <p>Isti kod sebe prilikom upravljanja navedenim vozilom nije imao važeću prometnu dozvolu za vozilo kojim upravlja</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
 
-          <li class="category-item">
-                <a  onclick="toggleContent('vozac-nema-potvrdu-prenos')">VOZAČ KOD SEBE NEMA POTVRDU O UPORABI PRENOSIVIH PLOČICA</a>
-                <div id="vozac-nema-potvrdu-prenos" class="hidden-content">
-                    <p><strong>Članak 240.4/9</strong></p>
-                    <p>Isti je upravljao navedenim vozilom, a kod sebe nije imao važeću potvrdu i prometnu dozvolu za prenosive pločice</p>
-                    <p><strong>Kazna:</strong> 30,00 eura</p> 
-                    <p><strong>NAPOMENA:</strong>izdaju se najduže na rok od 1 godine</p> 
-                </div>
-            </li>
+        <li class="category-item"><a href="./motornovozilonemapropisanbrojregplocica.html">MOTORNO VOZILO NEMA PROPISAN BROJ REG. PLOČICA</a></li>
 
+        <li class="category-item">
+          <a onclick="toggleContent('regplocice')">REG. PLOČICE NISU VIDILJIVE</a>
+          <div id="regplocice" class="hidden-content">
+            <p><strong>Članak 244.4/7</strong></p>
+            <p>Isti je upravljao navedenim vozilom na kojemu registracijske pločice nisu vidljive</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
 
-            <li class="category-item">
-                <a  onclick="toggleContent('vozac-nema-vazecu-pd')">VOZAČ NEMA VAŽEĆU PD ZA IZVOZNE PLOČICE</a>
-                <div id="vozac-nema-vazecu-pd" class="hidden-content">
-                 <p><strong>Članak 241.5/8</strong></p>
-                    <p>Isti je upravljao navedenim vozilom, a kod sebe nije imao važeću prometnu dozvolu za izvozne pločice</p>
-                    <p><strong>Kazna:</strong> 30,00 eura</p> 
-</div>
-            </li>
+        <li class="category-item">
+          <a onclick="toggleContent('vozac-registrirano-strana-zemlja')">VOZAČ VOZILA REGISTRIRANOG U STRANOJ ZEMLJI NEMA VAŽEĆU PROMETNU DOZVOLU</a>
+          <div id="vozac-registrirano-strana-zemlja" class="hidden-content">
+            <p><strong>Članak 247.1/4</strong></p>
 
+            <p>Isti je upravljao navedenim vozilom registriranim u stranoj zemlji ("x"), iako mu je važenje prometne dozvole isteklo s datumom: x;</p>
+            <p><strong>Kazna:</strong> 260,00 eura</p>
+          </div>
+        </li>
 
+        <li class="category-item">
+          <a onclick="toggleContent('vozac-registrirano-strana-zemlja-2')">VOZAČ VOZILA REGISTRIRANOG U STRANOJ ZEMLJI NEMA REG. OZNAKU ILI MEĐ. OZNAKU ZEMLJE REGISTRACIJE</a>
+          <div id="vozac-registrirano-strana-zemlja-2" class="hidden-content">
+            <p><strong>Članak 247.1/5</strong></p>
 
-
-            <li class="category-item">
-                <a  onclick="toggleContent('vozac-nema-potvrdu-izvozne')">VOZAČ KOD SEBE NEMA VAŽEĆU PD</a>
-                <div id="vozac-nema-potvrdu-izvozne" class="hidden-content">
-                 <p><strong>Članak 242.3/5</strong></p>
-                    <p>Isti kod sebe prilikom upravljanja navedenim vozilom nije imao važeću prometnu dozvolu za vozilo kojim upravlja</p>
-                    <p><strong>Kazna:</strong> 30,00 eura</p> 
-                    </div>
-            </li>
-
-
-            <li class="category-item"><a href="./motornovozilonemapropisanbrojregplocica.html">MOTORNO VOZILO NEMA PROPISAN BROJ REG. PLOČICA</a></li>
-
-
-          
-
-
-  <li class="category-item">
-                <a  onclick="toggleContent('regplocice')">REG. PLOČICE NISU VIDILJIVE</a>
-                <div id="regplocice" class="hidden-content">
-                 <p><strong>Članak 244.4/7</strong></p>
-                    <p>Isti je upravljao navedenim vozilom na kojemu registracijske pločice nisu vidljive</p>
-                    <p><strong>Kazna:</strong> 30,00 eura</p> 
-                    </div>
-            </li>
-
-
-
-            <li class="category-item">
-                <a  onclick="toggleContent('vozac-registrirano-strana-zemlja')">VOZAČ VOZILA REGISTRIRANOG U STRANOJ ZEMLJI NEMA VAŽEĆU PROMETNU DOZVOLU</a>
-                <div id="vozac-registrirano-strana-zemlja" class="hidden-content">
-                                     <p><strong>Članak 247.1/4</strong></p>
-
-                    <p>Isti je upravljao navedenim vozilom registriranim u stranoj zemlji ("x"), iako mu je važenje prometne dozvole isteklo s datumom: x;
-</p>
-                    <p><strong>Kazna:</strong> 260,00 eura</p> 
-                </div>
-            </li>
-
-
-            <li class="category-item">
-                <a  onclick="toggleContent('vozac-registrirano-strana-zemlja-2')">VOZAČ VOZILA REGISTRIRANOG U STRANOJ ZEMLJI NEMA REG. OZNAKU ILI MEĐ. OZNAKU ZEMLJE REGISTRACIJE</a>
-                <div id="vozac-registrirano-strana-zemlja-2" class="hidden-content">
-                 <p><strong>Članak 247.1/5</strong></p>
-
-                <p>Isti je upravljao navedenim vozilom registriranim u stranoj zemlji ("x"), a da pritom nije imao istaknute reg. oznake (međunarodnu oznaku zemlje registracije)</p>
-                <p><strong>Kazna:</strong> 30,00 eura</p> 
-
-                </div>
-            </li>
-
-
-        </ul>
+            <p>Isti je upravljao navedenim vozilom registriranim u stranoj zemlji ("x"), a da pritom nije imao istaknute reg. oznake (međunarodnu oznaku zemlje registracije)</p>
+            <p><strong>Kazna:</strong> 30,00 eura</p>
+          </div>
+        </li>
+      </ul>
     </main>
-</body>
+  </body>
 </html>
